@@ -1,69 +1,95 @@
+import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
+const BASE_URL = 'https://portfolio-js.b.goit.study/api/requests';
+
 const form = document.querySelector('.form');
+const inputEmail = document.querySelector('.form-input');
+const userComment = document.querySelector('.form-message');
+const successIcon = document.querySelector('.form-icon-success');
+const errorInput = document.querySelector('.form-input-error');
+const errorMsg = document.querySelector('.form-input-error-msg');
 const modalOverlay = document.querySelector('.modal-overlay');
 const modalCloseBtn = document.querySelector('.modal-close-btn');
+const modalTitle = document.querySelector('.modal-text-main');
+const modalMessage = document.querySelector('.modal-text-second');
 
-const API_URL = 'https://portfolio-js.b.goit.study/api';
+modalCloseBtn.addEventListener('click', () => {
+  modalOverlay.classList.remove('is-open');
+  document.body.style.overflow = 'auto';
+});
 
-// Відправка форми
-form.addEventListener('submit', async (event) => {
-  event.preventDefault(); 
+modalOverlay.addEventListener('click', event => {
+  modalOverlay.classList.remove('is-open');
+  document.body.style.overflow = 'auto';
+});
 
-  if (!form.checkValidity()) {
-    alert('Please fill in all fields correctly.');
+window.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    modalOverlay.classList.remove('is-open');
+    document.body.style.overflow = 'auto';
+  }
+});
+
+const validateEmail = () => {
+  if (inputEmail.validity.valid) {
+    successIcon.style.display = 'block';
+    errorInput.style.display = 'none';
+    return true;
+  } else {
+    successIcon.style.display = 'none';
+    errorInput.style.display = 'block';
+    errorInput.textContent = 'Invalid email, try again';
+    return false;
+  }
+};
+
+inputEmail.addEventListener('input', validateEmail);
+
+form.addEventListener('submit', async event => {
+  event.preventDefault();
+
+  if (inputEmail.value.trim() === '') {
+    errorInput.style.display = 'block';
+    errorInput.textContent = 'All fields must be filled';
     return;
   }
 
-  // Збирання даних форми
-  const formData = {
-    email: form.email.value.trim(),
-    message: form.message.value.trim(),
-  };
+  if (userComment.value.trim() === '') {
+    errorMsg.style.display = 'block';
+    errorMsg.textContent = 'All fields must be filled';
+    return;
+  } else {
+    errorMsg.style.display = 'none';
+  }
 
-  try {
-    // Відправка POST-запиту
-    const response = await fetch(API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
+  if (validateEmail()) {
+    const formData = {
+      email: inputEmail.value.trim(),
+      comment: userComment.value.trim(),
+    };
 
-    // Обробка відповіді сервера
-    if (response.ok) {
-      // Успіх: відкриваємо модальне вікно та очищуємо форму
-      openModal();
-      form.reset();
-    } else {
-      // Помилка: показуємо повідомлення
-      alert('An error occurred while submitting the form. Please try again.');
+    try {
+      const response = await axios.post(BASE_URL, formData);
+
+      if (response.status === 201) {
+        modalOverlay.classList.add('is-open');
+
+        modalTitle.textContent = response.data.title;
+        modalMessage.textContent = response.data.message;
+
+        //   errorInput.style.display = 'none';
+
+        form.reset();
+        successIcon.style.display = 'none';
+      }
+    } catch (error) {
+      iziToast.error({
+        message: error.message,
+        title: 'Error',
+        position: 'center',
+      });
     }
-  } catch (error) {
-    // Випадок мережевої помилки
-    alert('Failed to connect to the server. Please check your internet connection.');
   }
 });
-
-// Відкриття модального вікна
-function openModal() {
-  modalOverlay.classList.add('is-open');
-}
-
-// Закриття модального вікна
-modalCloseBtn.addEventListener('click', closeModal);
-modalOverlay.addEventListener('click', (event) => {
-  if (event.target === modalOverlay) {
-    closeModal();
-  }
-});
-
-// Закриття при натисканні Escape
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && modalOverlay.classList.contains('is-open')) {
-    closeModal();
-  }
-});
-
-function closeModal() {
-  modalOverlay.classList.remove('is-open');
-}
