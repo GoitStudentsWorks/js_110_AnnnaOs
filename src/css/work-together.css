@@ -244,7 +244,14 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
     .work-together {
-        padding: 120px 0 124px 0;
+    padding: 120px 0 124px 0;
+    background-image: url('../img/bg/decor-bg7@2x-tab.png');
+    background-size: cover;
+    background-position: right 32px top 0;
+    background-size: 336px 200px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    /* position: absolute; */
     }
 
     .work-together-title {
@@ -288,6 +295,13 @@ textarea::placeholder {
 @media screen and (min-width: 1280px) {
     .work-together {
         padding: 116px 0 164px 0;
+        background-image: url('../img/bg/decor-bg3@2x-desk.png');
+        background-size: cover;
+        background-position: right 32px top 0;
+        background-size: 526px 408px;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        /* position: absolute; */
     }
 
     .work-together-title {
