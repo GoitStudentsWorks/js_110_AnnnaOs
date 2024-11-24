@@ -15,6 +15,7 @@ const modalCloseBtn = document.querySelector('.modal-close-btn');
 const modalTitle = document.querySelector('.modal-text-main');
 const modalMessage = document.querySelector('.modal-text-second');
 
+// Закриття модального вікна
 modalCloseBtn.addEventListener('click', () => {
   modalOverlay.classList.remove('is-open');
   document.body.style.overflow = 'auto';
@@ -32,12 +33,19 @@ window.addEventListener('keydown', event => {
   }
 });
 
+// Валідація email
 const validateEmail = () => {
   if (inputEmail.validity.valid) {
+    // Пошта валідна
+    inputEmail.classList.add('valid');
+    inputEmail.classList.remove('invalid');
     successIcon.style.display = 'block';
     errorInput.style.display = 'none';
     return true;
   } else {
+    // Пошта некоректна
+    inputEmail.classList.remove('valid');
+    inputEmail.classList.add('invalid');
     successIcon.style.display = 'none';
     errorInput.style.display = 'block';
     errorInput.textContent = 'Invalid email, try again';
@@ -45,8 +53,10 @@ const validateEmail = () => {
   }
 };
 
+// Відслідковування змін в полі вводу
 inputEmail.addEventListener('input', validateEmail);
 
+// Обробка форми
 form.addEventListener('submit', async event => {
   event.preventDefault();
 
@@ -79,10 +89,9 @@ form.addEventListener('submit', async event => {
         modalTitle.textContent = response.data.title;
         modalMessage.textContent = response.data.message;
 
-        //   errorInput.style.display = 'none';
-
         form.reset();
         successIcon.style.display = 'none';
+        inputEmail.classList.remove('valid', 'invalid'); // Видалення класів після успішного відправлення
       }
     } catch (error) {
       iziToast.error({
