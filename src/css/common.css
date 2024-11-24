@@ -20,6 +20,7 @@
   --tech-skills-green: #bcdfd1;
   --message-btn: #00b068;
   --message-btn-hover: #009156;
+  --modal-overlay-bg: #292929cc;
 }
 
 :root .dark-theme {
@@ -35,6 +36,7 @@
   --tech-skills-green: #204136;
   --message-btn: #14c57c;
   --message-btn-hover: #009156;
+  --modal-overlay-bg: #1e2023cc;
 }
 
 html {
