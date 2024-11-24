@@ -6,7 +6,7 @@ const themeCheckbox = document.getElementById('change-theme');
 const currentTheme = localStorage.getItem('theme') || 'light-theme';
 
 body.classList.add(currentTheme);
-themeCheckbox.checked = currentTheme!=='light-theme';
+// themeCheckbox.checked = currentTheme!=='light-theme';
 
 setFavicon(currentTheme === 'light-theme' ? '#ffffff' : '#000000');
 // Зміна теми при кліку
@@ -16,7 +16,7 @@ setFavicon(currentTheme === 'light-theme' ? '#ffffff' : '#000000');
     body.classList.remove('light-theme', 'dark-theme');
     body.classList.add(newTheme);
     setFavicon(newTheme === 'light-theme' ? '#ffffff' : '#000000');
-   !themeCheckbox.checked;
+  //  !themeCheckbox.checked;
     // Зберегти тему
     localStorage.setItem('theme', newTheme);
         
