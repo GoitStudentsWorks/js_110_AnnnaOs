@@ -25,27 +25,57 @@
   });
 
 
-//   Модальное окно
-  document.addEventListener('DOMContentLoaded', () => {
+// //   Модальное окно
+//   document.addEventListener('DOMContentLoaded', () => {
+//     const menuContainer = document.querySelector('.js-menu-container');
+//     const openMenuButton = document.querySelector('.js-open-menu'); // кнопка для открытия меню
+//     const closeMenuButton = document.querySelector('.js-close-menu'); // кнопка для закрытия меню
+  
+//     // Открытие меню
+//     openMenuButton.addEventListener('click', () => {
+//       menuContainer.classList.add('active');
+//     });
+  
+//     // Закрытие меню
+//     closeMenuButton.addEventListener('click', () => {
+//       menuContainer.classList.remove('active');
+//     });
+  
+//     // Закрытие меню при клике вне меню
+//     menuContainer.addEventListener('click', (event) => {
+//       if (event.target === menuContainer) {
+//         menuContainer.classList.remove('active');
+//       }
+//     });
+//   });
+  
+document.addEventListener('DOMContentLoaded', () => {
     const menuContainer = document.querySelector('.js-menu-container');
-    const openMenuButton = document.querySelector('.js-open-menu'); // кнопка для открытия меню
-    const closeMenuButton = document.querySelector('.js-close-menu'); // кнопка для закрытия меню
+    const openMenuButton = document.querySelector('.js-open-menu');
+    const closeMenuButton = document.querySelector('.js-close-menu');
+  
+    if (!menuContainer || !openMenuButton || !closeMenuButton) {
+      console.error('Элементы управления меню не найдены!');
+      return;
+    }
   
     // Открытие меню
     openMenuButton.addEventListener('click', () => {
       menuContainer.classList.add('active');
+      console.log('Меню открыто'); 
     });
   
     // Закрытие меню
     closeMenuButton.addEventListener('click', () => {
       menuContainer.classList.remove('active');
+      console.log('Меню закрыто'); 
     });
   
-    // Закрытие меню при клике вне меню
+    // Закрытие меню при клике вне области меню
     menuContainer.addEventListener('click', (event) => {
       if (event.target === menuContainer) {
         menuContainer.classList.remove('active');
+        console.log('Клик вне меню, меню закрыто'); 
       }
     });
   });
-  
