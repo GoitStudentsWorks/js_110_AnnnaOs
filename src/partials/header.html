@@ -5,7 +5,7 @@
   <div class="header-wrap">
     <div class="icon-container">
         <div class="switch-container">
-          <input type="checkbox" id="switch">  
+          <input type="checkbox" id="switch" aria-label="Переключить светлую/тёмную тему">  
           <label for="switch" class="label">
             <i class="ligth"></i>
             <i class="dark"></i>
@@ -19,11 +19,14 @@
             <li class="header-item"><a class="header-link" href="work-together">Contacts</a></li>
         </ul>
      </nav>
-     <button class="burger-btn" type="button">
+     <button
+        class="header-mobile-menu-close js-open-menu"
+        aria-label="Open menu">      
         <svg class="burger-btn-menu" width="32" height="32">
          <use href="../img/icons.svg#burger-btn" ></use>
         </svg>
         </button>
+          
   </div>
 </div>
 </header>
@@ -64,3 +67,5 @@
    </div>
  </div>
 </div>
+
+<script type="module" src="../main.js"></script>

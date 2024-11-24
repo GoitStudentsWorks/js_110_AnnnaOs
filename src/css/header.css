@@ -200,6 +200,20 @@ color: #292929;
     
 
 }
+/* Стили для светлой темы */
+body.light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Стили для тёмной темы */
+  body.dark-theme {
+    background-color: black;
+    color: white;
+  }
+  
+
+
 
 /* ------------------------------ */
 @media screen and (min-width: 1280px) {
@@ -293,19 +307,19 @@ color: #292929;
     stroke: #00b068;
   }
   
-  .header-nav-menu-wrap {
+  .header-mobile-menu {
     display: flex;
     justify-content: center;
     flex-grow: 1;
     align-items: center;
-    background-image: url(../img/Decor-bg.png);
+    background-image: url(../img/decor-bg-8@1.png);
     background-repeat: no-repeat;
   }
   @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-rezolution: 2dppx),
   (min-rezolution: 192dpi) {
-  .header-nav-menu-wrap {
-    background-image: url(../img/Decor-bg2x.png);
+  .header-mobile-menu {
+    background-image: url(../img/decor-bg-8@2x.png);
   }
 }
 
