@@ -1,4 +1,3 @@
-
 const body = document.body;
 const favicon = document.getElementById('favicon');
 const themeCheckbox = document.getElementById('change-theme');
@@ -11,16 +10,16 @@ body.classList.add(currentTheme);
 setFavicon(currentTheme === 'light-theme' ? '#ffffff' : '#000000');
 // Зміна теми при кліку
 // themeToggleButton.addEventListener('click', () => {
-  themeCheckbox.addEventListener('change', function () {
-    const newTheme = body.classList.contains('light-theme') ? 'dark-theme' : 'light-theme';
-    body.classList.remove('light-theme', 'dark-theme');
-    body.classList.add(newTheme);
-    setFavicon(newTheme === 'light-theme' ? '#ffffff' : '#000000');
+themeCheckbox.addEventListener('change', function () {
+  const newTheme = body.classList.contains('light-theme')
+    ? 'dark-theme'
+    : 'light-theme';
+  body.classList.remove('light-theme', 'dark-theme');
+  body.classList.add(newTheme);
+  setFavicon(newTheme === 'light-theme' ? '#ffffff' : '#000000');
   //  !themeCheckbox.checked;
-    // Зберегти тему
-    localStorage.setItem('theme', newTheme);
-        
-
+  // Зберегти тему
+  localStorage.setItem('theme', newTheme);
 });
 
 // Функція для встановлення фавіконки
@@ -34,5 +33,4 @@ function setFavicon(color) {
   </svg>
 `;
   favicon.setAttribute('href', `data:image/svg+xml;base64,${btoa(svg)}`);
-  
 }

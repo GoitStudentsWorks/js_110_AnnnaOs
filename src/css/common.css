@@ -45,12 +45,15 @@ html {
 
 body {
   background-color: var(--main-color);
+  color: var(--main-text-color);
   font-family: var(--first-font-family);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  transition: background-color 0.3s, color 0.3s;
 }
 
 h1,
