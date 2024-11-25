@@ -1,0 +1,144 @@
+.tech-skills {
+  padding: 40px 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.tech-term-first,
+.tech-term-second {
+      overflow: hidden;
+      font-family: var(--first-font-family);
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background-color: var(--tech-skills-green);
+      position: relative;
+      z-index: 1;
+}
+
+.tech-term-second {
+  color: var(--title-accent-green-color);
+  background-color: var(--gray);
+  transform: translateX(-2px) rotate(2deg);
+  z-index: 0;
+}
+
+.term-first,
+.term-second {
+  display: flex;
+}
+
+.tech-skills-list-first,
+.tech-skills-list-second {
+  list-style: none;
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 32px 0px;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.tech-skills-list-second {
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+}
+
+.tech-skills-item {
+  position: relative;
+  padding-left: 16px;
+  padding-right: 12px;
+}
+
+.first::before,
+.second::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--title-accent-green-color);
+  border-radius: 2px;
+}
+
+.second::before {
+  background-color: var(--main-text-color);
+  border-radius: 2px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px) {
+  .tech-skills {
+    padding: 62px 0;
+  }
+
+  .tech-term-first,
+  .tech-term-second {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .tech-term-second {
+    overflow: hidden;
+  }
+
+  .term-first {
+    padding: 40px 0px;
+    min-width: 100%;
+    white-space: nowrap;
+  }
+
+  .term-second {
+    padding: 40px 0px;
+  }
+
+  .tach-skills-item {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 24px;
+  }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1280px) {
+  .tech-skills {
+    padding: 82px 0;
+  }
+}

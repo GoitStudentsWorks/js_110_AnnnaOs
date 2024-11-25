@@ -5,16 +5,16 @@
 ##Team:
 
 - [@AnnnaOs] (https://github.com/AnnnaOs) (Team Lead)
-- [@Elcher26] (https://github.com/Elcher26) (Scrum Master)
-- [@doboshdiana404] (https://github.com/doboshdiana404)
-- [@NataliiaShah] (https://github.com/NataliiaShah)
-- [@MaksymSelezen] (https://github.com/MaksymSelezen)
-- [@oksanulik] (https://github.com/oksanulik)
-- [@ViktoriiaBut] (https://github.com/ViktoriiaBut)
-- [@andrii-cabbage] (https://github.com/andrii-cabbage)
-- [@heyylikeduard] (https://github.com/heyylikeduard)
-- [@Oksana-Zaluzhna] (https://github.com/Oksana-Zaluzhna)
-- [@SakhnevychOlya] (https://github.com/SakhnevychOlya)
+- [@Elcher26] (https://github.com/Elcher26) (Scrum Master, Review)
+- [@doboshdiana404] (https://github.com/doboshdiana404) (Benefits)
+- [@NataliiaShah] (https://github.com/NataliiaShah) (Tech Skills)
+- [@MaksymSelezen] (https://github.com/MaksymSelezen) (FAQ)
+- [@oksanulik] (https://github.com/oksanulik) (About Me)
+- [@ViktoriiaBut] (https://github.com/ViktoriiaBut) (Header)
+- [@andrii-cabbage] (https://github.com/andrii-cabbage) (My Projects)
+- [@heyylikeduard] (https://github.com/heyylikeduard) (Work Together)
+- [@Oksana-Zaluzhna] (https://github.com/Oksana-Zaluzhna) (Hero)
+- [@SakhnevychOlya] (https://github.com/SakhnevychOlya) (Footer)
 
 ##Your Role (Team Lead):
 
