@@ -45,7 +45,7 @@ html {
 
 body {
   background-color: var(--main-color);
-  /* font-family: 'Poppins', 'Montserrat', 'Impact', sans-serif; */
+  font-family: var(--first-font-family);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
