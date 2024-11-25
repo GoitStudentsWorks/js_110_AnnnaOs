@@ -103,6 +103,7 @@ ul .benefits-item:not(:last-child) {
 
 @media screen and (min-width: 1280px) {
   .benefits {
+    position: relative;
     padding-top: 82px;
     padding-bottom: 82px;
   }
@@ -121,83 +122,27 @@ ul .benefits-item:not(:last-child) {
     width: 384px;
   }
 
-  .benefits-bg{
-    display: block;
-    position: absolute;
-    top: -116px;
-    right: 0;
-  }
   
-  .benefits-container{
+ 
+
+.benefits-container{
     position: relative;
+    background-image: url(/img/bg/decor-bg3@1x-desk.png);
+    background-repeat: no-repeat;
+    background-position: 722px top;
+    padding-top: 116px;
+    background-size: 526px;
+    margin-top: -116px;
   }
 
-
-
-}
-/* 
-.theme-checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  width: 48px;
-  height: 24px;
-  cursor: pointer;
-  background-color: var(--gray);
-  border-radius: 16px;
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 2px;
-    left: 2px;
-    border-radius: 50%;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-      opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &::before {
-    background-color: #2A2D32;
-    opacity: 0;
-  }
-  &::after {
-    background-color: #00B068;
-  }
-  &:checked {
-    background-color: #2A2D32;
-    &::before {
-      transform: translateX(calc(80%));
-      background-color: #2A2D32;
-      opacity: 1;
-      z-index: 10;
+  
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .benefits-container {
+      background-image: url(/img/bg/decor-bg3@2x-desk.png);
     }
-    &::after {
-      transform: translateX(calc(100% + 3px));
-    }
-  }
+  } 
+
 }
-@media (min-width: 768px) {
-  .theme-checkbox {
-    margin: 0 40px 0 auto;
-  }
-}
-@media (min-width: 1280px) {
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  .theme-checkbox {
-    display: block;
-  }
-} */
