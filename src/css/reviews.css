@@ -1,6 +1,6 @@
 .reviews {
-    padding-top: 82px;
-    padding-bottom: 82px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   
   .reviews-title {
@@ -107,7 +107,7 @@
   @media screen and (min-width: 768px) {
     .reviews {
       padding-top: 62px;
-      padding-bottom: 62px;
+      padding-bottom: 4px;
     }
   
     .reviews-title {
@@ -132,7 +132,7 @@
   @media screen and (min-width: 1280px) {
     .reviews {
       padding-top: 82px;
-      padding-bottom: 82px;
+      padding-bottom: 48px;
     }
   
     .reviews-title {
