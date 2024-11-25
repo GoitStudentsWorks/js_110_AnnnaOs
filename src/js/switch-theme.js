@@ -1,11 +1,11 @@
 const body = document.body;
 const favicon = document.getElementById('favicon');
-const themeCheckbox = document.getElementById('change-theme');
+const themeCheckbox = document.getElementById('switch');
 
 const currentTheme = localStorage.getItem('theme') || 'light-theme';
 
 body.classList.add(currentTheme);
-// themeCheckbox.checked = currentTheme!=='light-theme';
+themeCheckbox.checked = currentTheme !== 'light-theme';
 
 setFavicon(currentTheme === 'light-theme' ? '#ffffff' : '#000000');
 // Зміна теми при кліку
