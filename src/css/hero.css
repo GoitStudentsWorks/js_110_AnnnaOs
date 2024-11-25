@@ -45,7 +45,7 @@ display: none;
 }
 
 .hero-button{
-padding-top: 44px;
+padding-top: 64px;
 font-family: var(--first-font-family);
 font-weight: 400;
 font-size: 18px;
@@ -126,7 +126,9 @@ width: 360px;
   width: 100%;
  
 }
-
+.hero-container{
+  position: relative;
+}
   .hero-title {
   font-size: 136px;
   line-height: 1.15;
@@ -137,32 +139,35 @@ width: 360px;
 .title-black{
 width: 340px;
 }
-.hero-content-img-box{
+/* .hero-content-img-box{
 position:relative;
-}
+} */
 
 .hero-img{
 position: absolute;
 top: 84px;
-right:0;
+right:32px;
 }
 .accent-color-title{
-position: relative;
-top: 60px;
-right: -136px;
-/* z-index: 1; */
-width: 600px;
+display: block;
+position: absolute;
+top: 490px;
+left: 134px;
+/* top: 60px;
+right: -136px; */
+ /* z-index: 1; */
+/* width: 600px;  */
 }
-.hero-social-link{
+/* .hero-social-link{
 position: relative;
-}
+} */
 .hero-socials {
   display: flex;
   gap: 24px;
   list-style: none;
-  position: relative;
-  right: -372px;
-  top: -272px;
+  position: absolute;
+  right: 32px;
+  top: 465px;
   font-family:var(--first-font-family);
 font-weight: 300;
 font-size: 16px;
@@ -179,7 +184,7 @@ color:var(--main-text-color);
 
 .hero-button{
   position: relative;
-padding-top: 72px;
+padding-top: 520px;
 font-size: 20px;
 padding-left: 136px;
 
@@ -205,9 +210,11 @@ font-weight: 500;
 font-size: 36px;
 line-height: 1.33;
 letter-spacing: 0.01em;
-width: 768px;
+width: 100%;
 }
 .hero-subtitle-text{
+  display: block;
+  width: 640px;
   padding: 64px 32px;
 }
 .accent-color-subtitle{
@@ -221,46 +228,49 @@ padding-bottom: 82px;
 width: 100%;
 }
 
-.hero-title {
+/* .hero-title {
   position:relative;
-}
+} */
 .title-black{
    padding-top: 80px; 
     width: 384px;
 }
 .hero-img{
 position: absolute;
-top: -690px;
-right: 416px;
+top: 104px;
+right: 520px;
 }
 .accent-color-title{
-position: relative;
-top: -36px;
-right:-651px;
-z-index: 1;
+position: absolute;
+display: block;
+top: 422px;
+left:651px;
 width: 597px;
+z-index: 1;
+
 }
 
 .hero-socials {
-position: relative;
-top: -372px;
-right:-884px;
+position: absolute;
+top: 402px;
+right: 112px;
 }
 
 .hero-button{
 position: absolute;
-top: 612px;
+top: 112px;
 padding-left: 108px;
 }
 
 .hero-subtitle{
-position:relative;
-top: -36px;
-/* padding: 120px 136px; */
+
+padding-top: 372px;
 width: 100%;
 }
 .hero-subtitle-text{
   padding: 120px 136px;
+  display: block;
+  width: 1008px;
   background-color: var(--gray);
 }
 
