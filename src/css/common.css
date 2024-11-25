@@ -1,20 +1,42 @@
 :root {
-  --black-color-light-th: #292929;
-  --accet-green-color-light-th: #00b068;
-  --white-color: #f0f0f0;
-  --light-grey-color-light-th: #e4e5e6;
-  --light-accet-green-color-light-th: #bcdfd1;
   --hover-green-color: #009156;
   --error-color: #e74a3b;
-  --hover-grey-color-light-th: #bbbbbb;
-  --black-color-dark-th: #1e2023;
-  --accet-green-color-dark-th: #14c57c;
-  --charcoal-color-dark-th: #2a2d32;
-  --dark-accet-color-dark-th: #204136;
-  --hover-charcoal-color-dark-th: #2a2d32;
+  /* Fonts */
   --first-font-family: 'Poppins', sans-serif;
   --second-font-family: 'Impact', sans-serif;
   --third-font-family: 'Montserrat', sans-serif;
+}
+
+:root .light-theme {
+  --main-color: #f0f0f0;
+  --main-text-color: #292929;
+  --title-accent-green-color: #00b068;
+  --hero-btn: #bcdfd1;
+  --hero-btn-hover: #00b068;
+  --gray: #e4e5e6;
+  --gray-hover: #bbbbbb;
+  --link-color: #292929;
+  --link-color-hover: #00b068;
+  --tech-skills-green: #bcdfd1;
+  --message-btn: #00b068;
+  --message-btn-hover: #009156;
+  --modal-overlay-bg: #292929cc;
+}
+
+:root .dark-theme {
+  --main-color: #1e2023;
+  --main-text-color: #f0f0f0;
+  --title-accent-green-color: #14c57c;
+  --hero-btn: #14c57c;
+  --hero-btn-hover: #009156;
+  --gray: #2a2d32;
+  --gray-hover: #3b3f45;
+  --link-color: #f0f0f0;
+  --link-color-hover: #14c57c;
+  --tech-skills-green: #204136;
+  --message-btn: #14c57c;
+  --message-btn-hover: #009156;
+  --modal-overlay-bg: #1e2023cc;
 }
 
 html {
@@ -22,14 +44,16 @@ html {
 }
 
 body {
-  background-color: #f0f0f0;
-  /* background-color: #1E2023; */
-  font-family: 'Poppins', 'Montserrat', 'Impact', sans-serif;
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  font-family: var(--first-font-family);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  transition: background-color 0.3s, color 0.3s;
 }
 
 h1,
