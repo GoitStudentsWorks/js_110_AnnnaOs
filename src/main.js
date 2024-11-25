@@ -24,31 +24,7 @@
     }
   });
 
-
-// //   Модальное окно
-//   document.addEventListener('DOMContentLoaded', () => {
-//     const menuContainer = document.querySelector('.js-menu-container');
-//     const openMenuButton = document.querySelector('.js-open-menu'); // кнопка для открытия меню
-//     const closeMenuButton = document.querySelector('.js-close-menu'); // кнопка для закрытия меню
-  
-//     // Открытие меню
-//     openMenuButton.addEventListener('click', () => {
-//       menuContainer.classList.add('active');
-//     });
-  
-//     // Закрытие меню
-//     closeMenuButton.addEventListener('click', () => {
-//       menuContainer.classList.remove('active');
-//     });
-  
-//     // Закрытие меню при клике вне меню
-//     menuContainer.addEventListener('click', (event) => {
-//       if (event.target === menuContainer) {
-//         menuContainer.classList.remove('active');
-//       }
-//     });
-//   });
-  
+ 
 document.addEventListener('DOMContentLoaded', () => {
     const menuContainer = document.querySelector('.js-menu-container');
     const openMenuButton = document.querySelector('.js-open-menu');

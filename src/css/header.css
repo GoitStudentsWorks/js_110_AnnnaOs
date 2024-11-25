@@ -11,7 +11,6 @@
     justify-content: space-between;
     margin: 0;   
 }
-
 .header-item {
     display: inline-block;
  }
@@ -76,7 +75,20 @@
     position: absolute;
     border-radius: 50%;
   }  
-
+  .dark-theme .label::before {
+    clip-path: polygon(
+      50% 0%,
+      100% 10%,
+      100% 35%,
+      100% 70%,
+      100% 90%,
+      50% 100%,
+      63% 81%,
+      69% 65%,
+      70% 46%,
+      66% 26%
+    );
+  }
   .burger-btn-menu {
     display: flex;
   align-items: center;
@@ -113,8 +125,10 @@
     .header-container {
         flex-direction: row;
         justify-content: space-between;
-        
-      }
+        align-items: center;
+              }
+
+    
       .burger-btn-menu {
         display: none;
     }
@@ -193,18 +207,7 @@
       left: 260px;
     }
   }
-  
-  @keyframes burgerAnimation {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  
+
 /* Стили для светлой темы */
 body.light-theme {
     background-color: white;
@@ -221,10 +224,13 @@ body.light-theme {
   .dark-theme .header-list {
     color: #f0f0f0;
   }
-  .dark-theme .burger-btn {
+  .dark-theme .burger-btn-menu {
     color: #f0f0f0;
   }
-
+  .dark-theme .header-mobile-menu-container {
+    background-color: black;
+    color: white;
+  }
 
    .header-mobile-menu-container {
     position: fixed;
@@ -244,12 +250,13 @@ body.light-theme {
     /* Показываем модальное меню */
 .header-mobile-menu-container.active {
     display: flex;
-    transform: translateX(0); /* Убираем смещение */
+    transform: translateX(0); 
   }
 
-  .header-mobile-logo {
-   margin-left: 0;
-  }
+   .header-mobile-logo {
+      margin: 0; 
+      }
+
   .highlit {
     color: #00b068;  
   }
@@ -264,7 +271,7 @@ body.light-theme {
     align-items: center;
     justify-content: center;
   }
-   
+  
     .header-btn-icon {
     transition: fill 0.25s ease-in-out;
   }
@@ -283,6 +290,7 @@ body.light-theme {
     transition: color 0.25s ease-in-out;
     border: none;
     background: none;
+    
   }
    
   .menu-open-icon {
@@ -318,27 +326,27 @@ body.light-theme {
     display: flex;
     flex-direction: column;
     gap: 24px;
-  }
+      }
 
   .header-container {
     display: flex;
-    justify-content: space-between; /* Логотип и кнопка по краям */
-    align-items: center; /* Выравнивание элементов по вертикали */
-    padding: 16px; /* Отступы внутри контейнера */
-    width: 100%; /* Занимает всю ширину */
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 16px; 
+    width: 100%;
   }
-  
-  .header-logo-container {
-    flex-shrink: 0; /* Логотип не уменьшается */
-  }
-  
+
+
   .header-mobile-menu-close {
-    flex-shrink: 0; /* Кнопка закрытия не уменьшается */
+    
+    border: none;
+    background: none;
+    color: #292929;
   }
-  
+
   .header-mobile-menu {
-    height: 100%; /* Растягивается на всю высоту */
+    height: 100%; 
     display: flex;
-    flex-direction: column; /* Сохраняем колоночный флекс */
+    flex-direction: column;
   }
   
