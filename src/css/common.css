@@ -21,6 +21,7 @@
   --message-btn: #00b068;
   --message-btn-hover: #009156;
   --modal-overlay-bg: #292929cc;
+  --modal-bg: #f0f0f0;
 }
 
 :root .dark-theme {
@@ -37,6 +38,7 @@
   --message-btn: #14c57c;
   --message-btn-hover: #009156;
   --modal-overlay-bg: #1e2023cc;
+  --modal-bg: #2a2d32;;
 }
 
 html {

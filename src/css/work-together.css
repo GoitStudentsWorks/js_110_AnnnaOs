@@ -1,6 +1,19 @@
 .work-together {
     padding: 40px 0 80px 0;
+    overflow: visible;
     position: relative;
+}
+
+.work-container {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+@media (max-width: 767px) {
+    .work-container {
+        background-image: none;
+    }
 }
 
 .work-together-title {
@@ -195,7 +208,7 @@ textarea::placeholder {
 
 .modal {
     position: relative;
-    background-color: #f0f0f0;
+    background-color: var(--modal-bg);
     border: 1px solid var(--light-grey);
     border-radius: 16px;
     padding: 48px 32px;
@@ -245,16 +258,15 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
     .work-together {
-    padding: 120px 0 124px 0;
-    /* background-image: url('../img/bg/decor-bg7@1x-tab.png');  
-    background-position: right top;
-    background-size: 336px 200px;
-    background-repeat: no-repeat;
-    background-attachment: local; */
+        padding: 0 0 124px 0;
+
     }
 
-
     .work-container {
+        /* background-image: url('../img/bg/decor-bg7@1x-tab.png'); */
+        background-size: 336px 260px;
+        background-position: right top;
+        padding: 120px 0 0 0;
     }
 
     .work-together-title {
@@ -297,15 +309,15 @@ textarea::placeholder {
 
 @media screen and (min-width: 1280px) {
     .work-together {
-        padding: 116px 0 164px 0;
-        /* background-image: url('../img/bg/decor-bg3@1x-desk.png');
-            background-size: cover;
-            background-position: right -100px top -200px;
-            background-size: 526px 408px;
-            background-repeat: no-repeat;
-            background-attachment: local; */
+        padding: 0 0 164px 0;
     }
 
+    .work-container {
+        /* background-image: url('../img/bg/decor-bg3@1x-desk.png'); */
+        background-size: 526px 408px;
+        background-position: right top;
+        padding: 116px 0 0 0;
+    }
 
     .work-together-title {
         margin: 0 0 80px 0;
@@ -350,27 +362,30 @@ textarea::placeholder {
     }
 }
 
-
-/* @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .work-together {
-        background-image: url(../img/bg/decor-bg3@2x-desk.png);
+/* Планшет: 1x */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .work-container {
+        background-image: url('../img/bg/decor-bg7@1x-tab.png');
     }
-} */
-
-
-
-/* .box {
-    width: 526px;
-    height: 408px;
-    background-image: url(../img/bg/decor-bg3@2x-desk.png);
-    background-size: 526px 408px;
 }
 
-@media (min-resolution: 192dpi) {
-    .box {
-        background-image: url(../img/bg/decor-bg3@2x-desk.png);
+/* Планшет: 2x */
+@media screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) {
+    .work-container {
+        background-image: url('../img/bg/decor-bg7@2x-tab.png');
     }
-} */
+}
+
+/* Десктоп: 1x */
+@media screen and (min-width: 1280px) {
+    .work-container {
+        background-image: url('../img/bg/decor-bg3@1x-desk.png');
+    }
+}
+
+/* Десктоп: 2x */
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .work-container {
+        background-image: url('../img/bg/decor-bg3@2x-desk.png');
+    }
+}
