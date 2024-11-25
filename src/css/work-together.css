@@ -209,6 +209,7 @@ textarea::placeholder {
 .modal {
     position: relative;
     background-color: #f0f0f0;
+    background-color: var(--modal-bg);
     border: 1px solid var(--light-grey);
     border-radius: 16px;
     padding: 48px 32px;
