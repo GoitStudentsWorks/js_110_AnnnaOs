@@ -82,7 +82,7 @@
     border-radius: 8px;
     padding: 16px;
     width: 288px;
-    height: 48px;
+    height: 16px;
     background-color: var(--gray);
     border: none;
     margin-bottom: 32px;
@@ -108,7 +108,7 @@
     border-radius: 8px;
     padding: 16px;
     width: 288px;
-    height: 128px;
+    height: 96px;
     background-color: var(--gray);
     border: none;
     margin-bottom: 32px;
@@ -324,6 +324,14 @@ textarea::placeholder {
         display: flex;
         gap: 136px;
         justify-content: space-between;
+    }
+
+    .form-input {
+        width: 560px;
+    }
+        
+    .form-message {
+        width: 560px;
     }
 
     .work-together-text {
