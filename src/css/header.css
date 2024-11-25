@@ -95,12 +95,13 @@
   cursor: pointer;
   background: none;
   border: none;
+  
   }
 
   #switch:checked + .label {
     background-color: #292929;
   }
-  
+
   #switch:checked + .label::before {
     content: '';
     -webkit-transform: translateX(25px);
@@ -115,7 +116,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
+ 
 /* -------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -132,6 +133,10 @@
       .burger-btn-menu {
         display: none;
     }
+    .dark-theme .burger-btn-menu {
+      display: none;
+  }
+
     .header-navigation {
         margin-right: auto;
           }
@@ -217,6 +222,7 @@ body.light-theme {
     background-color: black;
     color: white;
   }
+
   .dark-theme .header-logo {
     color: #f0f0f0;
   }
@@ -224,15 +230,34 @@ body.light-theme {
   .dark-theme .header-list {
     color: #f0f0f0;
   }
-  .dark-theme .burger-btn-menu {
-    color: #f0f0f0;
-  }
-  .dark-theme .header-mobile-menu-container {
-    background-color: black;
-    color: white;
+
+.dark-theme .burger-btn-menu {
+  color: #f0f0f0; 
+  background-color: transparent;
+  border: none;
   }
 
-   .header-mobile-menu-container {
+.dark-theme .menu-open-icon {
+  fill: #f0f0f0; 
+  stroke: #f0f0f0;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark-theme .menu-open-icon:hover {
+  fill: #00b068;
+  stroke: #00b068;
+}
+
+/* Открытое меню */
+.js-menu-container.active {
+  display: block; 
+}
+
+/* Скрытое меню */
+.js-menu-container {
+  display: none;
+}
+  .header-mobile-menu-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -311,14 +336,14 @@ body.light-theme {
     justify-content: center;
     flex-grow: 1;
     align-items: center;
-    background-image: url(../img/decor-bg-8@1.png);
+    background-image: url(../img/bg/decor-bg8@1x-mob.png);
     background-repeat: no-repeat;
   }
   @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-rezolution: 2dppx),
   (min-rezolution: 192dpi) {
   .header-mobile-menu {
-    background-image: url(../img/decor-bg-8@2x.png);
+    background-image: url(../img/bg/decor-bg8@2x-mob.png);
   }
 }
 
@@ -349,4 +374,15 @@ body.light-theme {
     display: flex;
     flex-direction: column;
   }
+  .header-mobile-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
   
+  .header-mobile-link:hover,
+  .header-mobile-link:focus {
+    color: #00b068;
+  }
