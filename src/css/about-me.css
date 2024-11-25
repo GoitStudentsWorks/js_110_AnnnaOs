@@ -4,7 +4,7 @@
 }
 
 .about-title {
-  font-family: 'Impact', sans-serif;
+  font-family: var(--second-font-family);
   font-weight: 400;
   font-size: 52px;
   line-height: 1.23;
@@ -108,7 +108,7 @@
 }
 
 .about-subtitle {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--first-font-family);
   font-weight: 500;
   font-size: 32px;
   line-height: 1.25;
@@ -152,7 +152,7 @@
 }
 
 .about-subtext {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--first-font-family);
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -180,7 +180,7 @@
 .about-item {
   position: relative;
   padding-left: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--first-font-family);
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
