@@ -265,7 +265,7 @@ textarea::placeholder {
     .work-container {
         background-size: 336px 260px;
         background-position: right top;
-        padding: 120px 0 0 0;
+        padding: 120px 32px 0 32px;
     }
 
     .work-together-title {
@@ -314,7 +314,7 @@ textarea::placeholder {
     .work-container {
         background-size: 526px 408px;
         background-position: right top;
-        padding: 116px 0 0 0;
+        padding: 116px 32px 0 32px;
     }
 
     .work-together-title {
