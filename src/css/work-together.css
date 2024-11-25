@@ -227,7 +227,7 @@ textarea::placeholder {
 }
 
 .modal-close-svg {
-    stroke: #292929;
+    stroke: var(--link-color);
     fill: none;
     width: 24px;
     height: 24px;
@@ -263,10 +263,9 @@ textarea::placeholder {
     }
 
     .work-container {
-        /* background-image: url('../img/bg/decor-bg7@1x-tab.png'); */
         background-size: 336px 260px;
         background-position: right top;
-        padding: 120px 0 0 0;
+        padding: 120px 32px 0 32px;
     }
 
     .work-together-title {
@@ -313,10 +312,9 @@ textarea::placeholder {
     }
 
     .work-container {
-        /* background-image: url('../img/bg/decor-bg3@1x-desk.png'); */
         background-size: 526px 408px;
         background-position: right top;
-        padding: 116px 0 0 0;
+        padding: 116px 32px 0 32px;
     }
 
     .work-together-title {
