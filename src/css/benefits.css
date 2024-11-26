@@ -104,7 +104,7 @@ ul .benefits-item:not(:last-child) {
 @media screen and (min-width: 1280px) {
   .benefits {
     position: relative;
-    padding-top: 82px;
+    padding-top: 48px;
     padding-bottom: 82px;
   }
 
@@ -132,7 +132,7 @@ ul .benefits-item:not(:last-child) {
     background-position: 722px top;
     padding-top: 116px;
     background-size: 526px;
-    margin-top: -116px;
+    /* margin-top: -116px; */
   }
 
   
