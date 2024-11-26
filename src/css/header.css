@@ -19,9 +19,9 @@
     display: flex;
     font-family: "Impact", sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 32px;
     color: #292929;
@@ -95,12 +95,14 @@
   cursor: pointer;
   background: none;
   border: none;
+  color:  #292929;
   }
+
 
   #switch:checked + .label {
     background-color: #292929;
   }
-  
+
   #switch:checked + .label::before {
     content: '';
     -webkit-transform: translateX(25px);
@@ -115,7 +117,7 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
+ 
 /* -------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -128,11 +130,10 @@
         align-items: center;
               }
 
-    
-      .burger-btn-menu {
-        display: none;
-    }
-    .header-navigation {
+    .burger-btn-menu {
+                display: none;
+            }
+     .header-navigation {
         margin-right: auto;
           }
           .header-list {
@@ -150,9 +151,9 @@
       .header-logo {
         font-family: "Impact", sans-serif;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 32px;
         line-height: 1;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.05em;
         text-transform: uppercase;
       }
       .label {
@@ -208,37 +209,67 @@
     }
   }
 
-/* Стили для светлой темы */
+/* Стили для светлой и темной темы */
 body.light-theme {
     background-color: white;
     color: black;
   }
-  body.dark-theme {
+body.dark-theme {
     background-color: black;
     color: white;
   }
   .dark-theme .header-logo {
     color: #f0f0f0;
   }
-
+body.dark-theme .js-open-menu {
+  color: #f0f0f0;
+}
   .dark-theme .header-list {
     color: #f0f0f0;
   }
+
   .dark-theme .burger-btn-menu {
-    color: #f0f0f0;
+    color: #f0f0f0; 
   }
-  .dark-theme .header-mobile-menu-container {
-    background-color: black;
-    color: white;
+  
+  .dark-theme .menu-open-icon {
+    fill: #f0f0f0;
   }
 
-   .header-mobile-menu-container {
+.dark-theme .menu-open-icon:hover {
+  fill: #00b068; 
+}
+body.dark-theme .header-mobile-menu {
+  background: rgba(0, 0, 0, 0.9); 
+  color: #f0f0f0;
+  background-image: url(../img/bg/decor-bg8@1x-mob.png);
+    background-repeat: no-repeat;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-rezolution: 2dppx),
+  (min-rezolution: 192dpi) {
+  .header-mobile-menu {
+    background-image: url(../img/bg/decor-bg8@2x-mob.png);
+  }
+}
+
+
+.js-open-menu {
+  color: #000; 
+  background-color: transparent; 
+  border: none; 
+  cursor: pointer;
+  font-size: 32px; 
+}
+
+  .header-mobile-menu-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #f0f0f0;
+    display: flex;
     display: none; 
     justify-content: center;
     align-items: center;
@@ -246,7 +277,8 @@ body.light-theme {
     transform: translateX(-100%); 
     transition: transform 0.3s ease-in-out;
   }
-          
+  
+
     /* Показываем модальное меню */
 .header-mobile-menu-container.active {
     display: flex;
@@ -254,7 +286,7 @@ body.light-theme {
   }
 
    .header-mobile-logo {
-      margin: 0; 
+      margin: 0 ; 
       }
 
   .highlit {
@@ -272,7 +304,7 @@ body.light-theme {
     justify-content: center;
   }
   
-    .header-btn-icon {
+  .header-btn-icon {
     transition: fill 0.25s ease-in-out;
   }
   
@@ -292,14 +324,12 @@ body.light-theme {
     background: none;
     
   }
-   
+
   .menu-open-icon {
     width: 32px;
     height: 32px;
-    stroke: #292929;
-    fill: #e4e5e6;
-    stroke-width: 0;
-    transition: stroke 0.25s ease-in-out;
+    fill: #292929;
+    transition: fill 0.3s ease-in-out;
   }
   
   .menu-open-icon:hover {
@@ -311,14 +341,14 @@ body.light-theme {
     justify-content: center;
     flex-grow: 1;
     align-items: center;
-    background-image: url(../img/decor-bg-8@1.png);
+    background-image: url(../img/bg/decor-bg8@1x-mob.png);
     background-repeat: no-repeat;
   }
   @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-rezolution: 2dppx),
   (min-rezolution: 192dpi) {
   .header-mobile-menu {
-    background-image: url(../img/decor-bg-8@2x.png);
+    background-image: url(../img/bg/decor-bg8@2x-mob.png);
   }
 }
 
@@ -329,17 +359,20 @@ body.light-theme {
       }
 
   .header-container {
-    display: flex;
-    justify-content: space-between; 
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    display: flex; 
+    justify-content: space-between;
     align-items: center; 
-    margin-bottom: 16px; 
-    width: 100%;
+    margin: 32px;
+    
   }
 
-
   .header-mobile-menu-close {
-    
-    border: none;
+        border: none;
     background: none;
     color: #292929;
   }
@@ -349,4 +382,15 @@ body.light-theme {
     display: flex;
     flex-direction: column;
   }
+  .header-mobile-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
   
+  .header-mobile-link:hover,
+  .header-mobile-link:focus {
+    color: #00b068;
+  }
