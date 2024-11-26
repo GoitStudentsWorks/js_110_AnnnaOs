@@ -75,6 +75,7 @@
 
 .faq-item:not(.open) .faq-question {
   border-radius: 0;
+  background-color: var(--main-color);
 }
 
 .faq-answer {
@@ -135,6 +136,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .faq-title {
+    margin-bottom: 0;
+  }
+
   .title-qth {
     display: flex;
     flex-direction: row;
