@@ -9,8 +9,8 @@
     }
 
     // Добавляем класс 'dark-theme' к body после загрузки DOM
-    document.body.classList.add('dark-theme');
-    console.log("Класс 'dark-theme' добавлен после загрузки DOM.");
+    // document.body.classList.add('dark-theme');
+    // console.log("Класс 'dark-theme' добавлен после загрузки DOM.");
 
     // Открытие меню
     openMenuButton.addEventListener('click', () => {
