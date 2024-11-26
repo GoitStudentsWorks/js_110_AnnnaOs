@@ -3,6 +3,20 @@
   padding-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-me {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+}
+
 .about-title {
   font-family: var(--second-font-family);
   font-weight: 400;
@@ -175,6 +189,12 @@
 
 .about-list {
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    margin-bottom: 0;
+  }
 }
 
 .about-item {
