@@ -133,7 +133,7 @@ function loadProjects() {
                     <div class="project-name-btn">
                         <h3 class="project-name">${title}</h3>
                         <div class="centered">
-                                <a href="${link}" class="project-link" target="_blank">VISIT
+                                <a href="${link}" class="project-link" target="_blank" rel="noopener noreferrer">VISIT
                                  <svg class="project-icon" width="24" height="24">
                                         <use href="${urlSprite}#arrow-projects"></use>
                                     </svg>
@@ -153,9 +153,9 @@ function loadProjects() {
   newlyAddedItems.forEach((item, i) => {
     setTimeout(() => {
       item.classList.add('show');
-    }, i * 200);  
+    }, i * 200);
   });
-  
+
   currentIndex += projectsPerPage;
 
   if (currentIndex >= projects.length) {
