@@ -3,14 +3,18 @@
 /*----Header-----*/
 .header {
     width: 100%;
-    height: 96px;  
+    height: 96px;
+    padding: 20px 0;  
 }
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0;   
-}
+    top: 0;
+    left: 0; 
+    z-index: 1000; 
+    }
+
 .header-item {
     display: inline-block;
  }
@@ -23,7 +27,6 @@
     line-height: 1;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 32px;
     color: #292929;
 }
 
@@ -32,7 +35,7 @@
 }
 .header-wrap {
     display: flex;
-    gap: 40px;
+    gap: 20px;
   }
 
       .header-list {
@@ -41,11 +44,13 @@
 .icon-container {
     position: relative;
     margin: auto;
+    
 }
 .switch-container {
     display: flex;
     position: relative;
-  }
+    margin-left: 0px;
+}
 #switch {
   display: none;
 }
@@ -56,7 +61,7 @@
     background-color: #e4e5e6;
     border-radius: 2rem;
     overflow: hidden;
-    left: 20px;
+    
 
 }
 .label:hover {
@@ -122,7 +127,8 @@
 
 @media screen and (min-width: 768px) {
     .header {
-        height: 64px;  
+      padding: 32px 0;
+        /* height: 64px;   */
     }
     .header-container {
         flex-direction: row;
@@ -173,7 +179,7 @@
       }
       .header-wrap {
         display: flex;
-        gap: 40px;
+        
       }
     
       .header-list {
@@ -186,8 +192,6 @@
         font-weight: 300;
         font-size: 16px;
         transition: color 0.25s ease-in-out;
-        padding-top: 36px;
-        padding-bottom: 36px;
       }
     
       .header-link:hover,
@@ -229,10 +233,14 @@ body.dark-theme .js-open-menu {
   }
 
   .dark-theme .burger-btn-menu {
-    color: #f0f0f0; 
+    fill: #f0f0f0; 
   }
   
   .dark-theme .menu-open-icon {
+    fill: #f0f0f0;
+  }
+
+  .dark-theme .header-mobile-menu-close {
     fill: #f0f0f0;
   }
 
@@ -294,6 +302,7 @@ body.dark-theme .header-mobile-menu {
   }
 
   .header-mobile-menu {
+    
     display: flex;
     flex-direction: column;
     position: relative; 
@@ -358,18 +367,18 @@ body.dark-theme .header-mobile-menu {
     gap: 24px;
       }
 
-  .header-container {
-    position: fixed; 
+  .header-modal-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
     top: 0;
     left: 0; 
-    width: 100%; 
     z-index: 1000; 
-    display: flex; 
-    justify-content: space-between;
-    align-items: center; 
-    margin: 32px;
-    
-  }
+    padding: 20px;
+  } 
+  
+
 
   .header-mobile-menu-close {
         border: none;
@@ -394,3 +403,8 @@ body.dark-theme .header-mobile-menu {
   .header-mobile-link:focus {
     color: #00b068;
   }
+  /* .dark-theme .burger-btn-menu {
+    color: #f0f0f0;
+    background-color: red; /* Временный цвет для проверки */
+    /* border: 2px solid yellow; /* Временная рамка для проверки */
+  
