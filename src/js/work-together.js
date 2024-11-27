@@ -15,22 +15,33 @@ const modalCloseBtn = document.querySelector('.modal-close-btn');
 const modalTitle = document.querySelector('.modal-text-main');
 const modalMessage = document.querySelector('.modal-text-second');
 
-// Закриття модального вікна
-modalCloseBtn.addEventListener('click', () => {
-  modalOverlay.classList.remove('is-open');
-  document.body.style.overflow = 'auto';
-});
-
-modalOverlay.addEventListener('click', event => {
-  modalOverlay.classList.remove('is-open');
-  document.body.style.overflow = 'auto';
-});
-
-window.addEventListener('keydown', event => {
+// Функція для обробки події Escape
+const handleEscapeKey = event => {
   if (event.key === 'Escape') {
-    modalOverlay.classList.remove('is-open');
-    document.body.style.overflow = 'auto';
+    closeModal();
   }
+};
+
+// Функція відкриття модального вікна
+const openModal = () => {
+  modalOverlay.classList.add('is-open');
+  document.body.style.overflow = 'hidden'; // Блокуємо прокрутку сторінки
+  window.addEventListener('keydown', handleEscapeKey); // Додаємо слухач клавіатури
+};
+
+// Функція закриття модального вікна
+const closeModal = () => {
+  modalOverlay.classList.remove('is-open');
+  document.body.style.overflow = 'auto'; // Відновлюємо прокрутку сторінки
+  window.removeEventListener('keydown', handleEscapeKey); // Видаляємо слухач клавіатури
+};
+
+// Закриття модального вікна при натисканні кнопки закриття
+modalCloseBtn.addEventListener('click', closeModal);
+
+// Закриття модального вікна при кліку на overlay
+modalOverlay.addEventListener('click', event => {
+  if (event.target === modalOverlay) closeModal();
 });
 
 // Валідація email
@@ -84,7 +95,7 @@ form.addEventListener('submit', async event => {
       const response = await axios.post(BASE_URL, formData);
 
       if (response.status === 201) {
-        modalOverlay.classList.add('is-open');
+        openModal();
 
         modalTitle.textContent = response.data.title;
         modalMessage.textContent = response.data.message;

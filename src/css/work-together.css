@@ -1,19 +1,15 @@
-.work-container {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top right;
+.work-together {
+    padding: 80px 0;
+        /* background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right; */
 }
 
-@media (max-width: 767px) {
-    .work-container {
+/* @media (max-width: 767px) {
+    .work-together {
         background-image: none;
     }
-}
-
-.work-container {
-    padding: 80px 20px 80px 20px;
-    width: 320px;
-}
+} */
 
 .work-together-title {
     font-weight: 400;
@@ -23,11 +19,19 @@
     font-family: var(--second-font-family);
     text-transform: uppercase;
     color: var(--main-text-color);
-    margin: 0 0 40px 0;
+    margin-bottom: 40px;
 }
 
 .work-together-span {
     color: var(--title-accent-green-color);
+}
+
+
+.work-together-address {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 40px;
 }
 
 .work-together-text {
@@ -39,11 +43,9 @@
     text-transform: uppercase;
     color: var(--main-text-color);
     font-style: normal;
-    margin: 0 0 32px 0;
 }
 
 .work-together-list {
-    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -81,8 +83,8 @@
 .form-input {
     border-radius: 8px;
     padding: 16px;
-    width: 288px;
-    height: 16px;
+    width: 100%;
+    height: 48px;
     background-color: var(--gray);
     border: none;
     margin-bottom: 32px;
@@ -107,8 +109,8 @@
 .form-message {
     border-radius: 8px;
     padding: 16px;
-    width: 288px;
-    height: 96px;
+    width: 100%;
+    height: 128px;
     background-color: var(--gray);
     border: none;
     margin-bottom: 32px;
@@ -161,7 +163,7 @@ textarea::placeholder {
 .form-button {
     border-radius: 8px;
     padding: 12px 24px;
-    width: 320px;
+    width: 100%;
     height: 48px;
     background-color: var(--message-btn);
     font-family: var(--first-font-family);
@@ -256,11 +258,11 @@ textarea::placeholder {
 
 
 @media screen and (min-width: 768px) {
-    .work-container {
-        padding: 120px 32px 124px 32px;
-        width: 704px;
-        background-size: 336px 260px;
-        background-position: right top;
+    .work-together {
+        padding: 120px 0 124px 0;
+                /* background-size: 336px 260px; */
+                    /* background-position: right top;
+                    background-attachment: fixed; */
     }
 
     .work-together-title {
@@ -270,30 +272,27 @@ textarea::placeholder {
         margin: 0 0 60px 0;
     }
 
+    .work-together-address {
+        margin-bottom: 60px;
+        margin-right: 65px;
+    }
+
     .work-together-text {
         font-size: 20px;
         line-height: 160%;
-        margin-bottom: 32px;
+        max-width: 488px;
     }
 
-    .form-input {
-        width: 672px;
-    }
-
-    .form-message {
-        width: 672px;
-    }
-    
     .work-together-list {
-        margin-bottom: 60px;
         flex-direction: row;
     }
-
+    
     .form-button {
         width: 173px;
     }
 
     .modal {
+        border-radius: 16px;
         padding: 64px;
         max-width: 492px;
         max-height: 280px;
@@ -308,35 +307,25 @@ textarea::placeholder {
 
 
 @media screen and (min-width: 1280px) {
-    .work-container {
-        padding: 116px 32px 164px 32px;
-        width: 1216px;
-        background-size: 526px 408px;
-        background-position: right top;
+    .work-together {
+        padding: 116px 0 164px 0;
+                /* background-size: 526px 408px;
+                    background-position: right top; */
     }
 
     .work-together-title {
         margin: 0 0 80px 0;
-        max-width: 520px;
+        max-width: 513px;
     }
 
     .work-together-main-container {
         display: flex;
-        gap: 136px;
         justify-content: space-between;
     }
 
-    .form-input {
-        width: 560px;
-    }
-        
-    .form-message {
-        width: 560px;
-    }
-
-    .work-together-text {
-        margin-bottom: 120px;
-        padding: 0;
+    .work-together-address {
+        gap: 120px;
+        margin: 0;
     }
 
     .work-together-list {
@@ -344,31 +333,38 @@ textarea::placeholder {
         flex-direction: column;
     }
 
+    .form-input {
+        width: 592px;
+    }
+
     .modal {
         border: none;
     }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    .work-container {
+
+
+/* @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .work-together {
         background-image: url('../img/bg/decor-bg7@1x-tab.png');
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) {
-    .work-container {
+    .work-together {
         background-image: url('../img/bg/decor-bg7@2x-tab.png');
     }
-}
+} */
 
-@media screen and (min-width: 1280px) {
-    .work-container {
+/* @media screen and (min-width: 1280px) {
+    .work-together {
         background-image: url('../img/bg/decor-bg3@1x-desk.png');
     }
 }
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-    .work-container {
+    .work-together {
         background-image: url('../img/bg/decor-bg3@2x-desk.png');
     }
-}
+} */
