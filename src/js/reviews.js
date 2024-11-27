@@ -1,4 +1,3 @@
-
 import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
@@ -49,7 +48,7 @@ const createReviewsMarkup = reviews => {
         <div class="reviewer-data">
           <img
             src="${review.avatar_url}"
-            alt="Natalia Shevchenko"
+            alt="${review.author}"
             loading="lazy"
             width="40"
             height="40"

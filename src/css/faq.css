@@ -31,10 +31,13 @@
   justify-content: flex-start;
   flex-direction: row;
   gap: 16px;
-
-  border-radius: 16px;
+  border-bottom: 1px solid var(--gray);
+  border-radius: 16px 16px 0 0;
   overflow: hidden;
-  background-color: var(--tech-skills-green);
+  /* background-color: var(--main-color); */
+  /* background-color: var(--tech-skills-green); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faq-question {
@@ -57,9 +60,16 @@
   padding: 28px 24px;
   padding-right: 80px;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.faq-item.open .faq-question {
+/* .faq-item.open .faq-question {
+  background-color: var(--tech-skills-green);
+  border-radius: 16px;
+} */
+
+.faq-item.open {
   background-color: var(--tech-skills-green);
   border-radius: 16px;
 }
