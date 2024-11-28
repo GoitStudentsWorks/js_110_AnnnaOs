@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" id="favicon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" crossorigin src="/js_110_AnnnaOs/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_110_AnnnaOs/assets/vendor-D2Xwde-H.js">
+    <link rel="stylesheet" crossorigin href="/js_110_AnnnaOs/assets/vendor-Sdrirsik.css">
+    <link rel="stylesheet" crossorigin href="/js_110_AnnnaOs/assets/index-99hK4qsJ.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <a class="header-logo" href="./index.html"
+      >Lloyd<span class="highlit">Jefferson.</span>
+    </a>
+    <div class="header-wrap">
+      <div class="icon-container">
+        <div class="switch-container">
+          <input
+            type="checkbox"
+            id="switch"
+            aria-label="Переключить светлую/тёмную тему"
+          />
+          <label for="switch" class="label">
+            <i class="ligth"></i>
+            <i class="dark"></i>
+          </label>
+        </div>
+      </div>
+      <nav class="header-navigation">
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="header-link" href="#about-me">About me</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#my-projects">Projects</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#work-together">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="header-mobile-menu-open js-open-menu" aria-label="Open menu">
+      <svg class="burger-btn-menu" width="32" height="32">
+        <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#burger-btn"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="header-mobile-menu-container js-menu-container" id="mobile-menu">
+  <div class="header-mobile-menu">
+    <div class="container mob-menu-top-bottom">
+      <div class="mob-menu-top">
+        <div class="header-logo-container">
+          <a class="header-logo header-mobile-logo" href="#top"
+            >Lloyd<span class="highlight">Jefferson.</span>
+          </a>
+        </div>
+
+        <button
+          class="header-mobile-menu-close js-close-menu"
+          aria-label="Close menu"
+        >
+          <svg width="32" height="32" class="menu-close-icon">
+            <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#close-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header-nav-menu-wrap">
+        <nav class="header-mobile-navigation">
+          <ul class="header-mobile-list">
+            <li class="header-mobile-item">
+              <a class="header-mobile-link" href="#about-me">About me</a>
+            </li>
+            <li class="header-mobile-item">
+              <a class="header-mobile-link" href="#my-projects">Projects</a>
+            </li>
+            <li class="header-mobile-item">
+              <a class="header-mobile-link" href="#work-together">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <main>
+      <section class="hero">
+  <div class="container hero-container">
+    <div class="hero-title-link">
+      <h1 class="hero-title">
+        <span class="title-black">HELLO, I AM </span>
+        <span class="accent-color-title">FULLSTACK DEVELOPER</span>
+      </h1>
+      <div class="hero-link">
+        <a href="#work-together" class="custom-button">
+          <svg class="button-ikon" width="28" height="28">
+            <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#arrow-hero"></use>
+          </svg>
+          ORDER THE PROJECT
+        </a>
+      </div>
+    </div>
+    <div class="hero-content-img-box">
+      <picture>
+        <source
+          srcset="/js_110_AnnnaOs/assets/hero@1x-BvXg5FFK.jpg 1x, /js_110_AnnnaOs/assets/hero@2x-BzghVxsU.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="hero-img"
+          src="/js_110_AnnnaOs/assets/hero@1x-BvXg5FFK.jpg"
+          alt="Developer-of-a-man-with-beard"
+          width="592"
+          height="444"
+          loading="lazy"
+        />
+      </picture>
+      <p class="hero-subtitle-text">
+        I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE
+        <span class="accent-color-subtitle">IMPRESSIVE</span> AND<span
+          class="accent-color-subtitle"
+        >
+          FUNCTIONAL WEBSITES</span
+        >
+        THAT REFLECT EACH CLIENT’S UNIQUE PERSONALITY.
+      </p>
+    </div>
+  </div>
+  <ul class="hero-socials">
+    <li class="hero-socials-list-item">
+      <a
+        class="hero-socials-link"
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Instagram</a
+      >
+    </li>
+    <li class="hero-socials-list-item">
+      <a
+        class="header-socials-link"
+        href="https://www.facebook.com/goITclub/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Facebook</a
+      >
+    </li>
+    <li class="hero-socials-list-item">
+      <a
+        class="header-socials-link"
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it "
+        target="_blank"
+        rel="noopener noreferrer"
+        >Linkedin</a
+      >
+    </li>
+    <li class="hero-socials-list-item">
+      <a
+        class="header-socials-link"
+        href="https://annnaos.github.io/codeCreators-project/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+    </li>
+  </ul>
+</section>
+
+      <section id="about-me" class="about-me">
+  <div class="container">
+    <h2 class="about-title">About <span class="about-title-span">me</span></h2>
+    <div class="photo-bio">
+      <picture class="about-photo">
+        <source
+          srcset="/js_110_AnnnaOs/assets/about-me@1x-desk-D8FgMBAU.jpg 1x, /js_110_AnnnaOs/assets/about-me@2x-desk-DdcXbnZR.jpg 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="/js_110_AnnnaOs/assets/about-me@1x-tab-e83__SRN.jpg 1x, /js_110_AnnnaOs/assets/about-me@2x-tab-BcZyBkrX.jpg 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="/js_110_AnnnaOs/assets/about-me@1x-mob-BrtUQYtD.jpg 1x, /js_110_AnnnaOs/assets/about-me@2x-mob-DJE_cBK1.jpg 2x"
+          media="(max-width:767.98px)"
+        />
+        <img
+          class="about-img img"
+          src="/js_110_AnnnaOs/assets/about-me@1x-mob-BrtUQYtD.jpg"
+          alt="Photo of a full stack developer"
+          width="336"
+          height="392"
+          loading="lazy"
+        />
+      </picture>
+      <div class="bio-subtext">
+        <h3 class="about-subtitle">Bio</h3>
+        <div class="about-wrapper-subtext">
+          <p class="about-subtext">
+            I'm Lloyd Jefferson, a talented programmer specializing <br />in
+            software development. My expertise spans various programming
+            languages and technologies, and I am dedicated to continually
+            enhancing my skills. I thrive on seeking unconventional and creative
+            solutions to problems, leveraging a high level of analytical skills
+            to effectively tackle even the most challenging tasks.
+          </p>
+          <p class="about-subtext">
+            Adaptable to both independent and team-oriented work, I collaborate
+            seamlessly with colleagues, exchanging ideas and finding optimal
+            solutions. My professional maturity enables me to navigate
+            challenges and stressful situations with a calm demeanor,
+            maintaining a consistently high quality of work. Committed to
+            self-improvement, I actively engage in studying new technologies and
+            practices to stay current with the <br />latest innovations in the
+            field.
+          </p>
+        </div>
+        <div class="wrapper-bg">
+          <picture class="about-bacground">
+            <source
+              srcset="/js_110_AnnnaOs/assets/decor-bg2@1x-desk-DoL2XL4q.png 1x, /js_110_AnnnaOs/assets/decor-bg2@2x-desk-P71Zdj_4.png 2x"
+              type="image/png"
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="/js_110_AnnnaOs/assets/decor-bg6@1x-tab-DU-J8xD0.png 1x, /js_110_AnnnaOs/assets/decor-bg6@2x-tab-Bfll7ddt.png 2x"
+              type="image/png"
+              media="(min-width:768px)"
+            />
+            <img
+              src="/img/bg/decor-bg2@1x-tab.png"
+              alt="Background image"
+              class="bacground-img img"
+              width="336"
+              height="252"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-education-role">
+      <div class="education-role">
+        <h3 class="about-subtitle">Education</h3>
+        <ul class="about-list">
+          <li class="about-item">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li class="about-item">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li class="about-item">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </div>
+      <div class="education-role">
+        <h3 class="about-subtitle">Role</h3>
+        <ul class="about-list-role">
+          <li class="about-item">Frontend development</li>
+          <li class="about-item">HeadlessCMS, Wordpress</li>
+          <li class="about-item">Blender (enjoy)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="tech-skills">
+  <h2 class="visually-hidden">Tech-skills</h2>
+    <div class="tech-term-first">
+      <div class="term-first">
+        <ul class="tech-skills-list-first">
+          <li class="tech-skills-item first">HTML/CSS</li>
+          <li class="tech-skills-item first">JavaScript</li>
+          <li class="tech-skills-item first">React</li>
+          <li class="tech-skills-item first">Node. js</li>
+          <li class="tech-skills-item first">React Native</li>
+          <li class="tech-skills-item first">Typescript</li>
+        </ul>
+
+        <ul class="tech-skills-list-first">
+          <li class="tech-skills-item first">HTML/CSS</li>
+          <li class="tech-skills-item first">JavaScript</li>
+          <li class="tech-skills-item first">React</li>
+          <li class="tech-skills-item first">Node. js</li>
+          <li class="tech-skills-item first">React Native</li>
+          <li class="tech-skills-item first">Typescript</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tech-term-second">
+      <div class="term-second">
+        <ul class="tech-skills-list-second">
+          <li class="tech-skills-item second">HTML/CSS</li>
+          <li class="tech-skills-item second">JavaScript</li>
+          <li class="tech-skills-item second">React</li>
+          <li class="tech-skills-item second">Node. js</li>
+          <li class="tech-skills-item second">React Native</li>
+          <li class="tech-skills-item second">Typescript</li>
+        </ul>
+
+        <ul class="tech-skills-list-second">
+          <li class="tech-skills-item second">HTML/CSS</li>
+          <li class="tech-skills-item second">JavaScript</li>
+          <li class="tech-skills-item second">React</li>
+          <li class="tech-skills-item second">Node. js</li>
+          <li class="tech-skills-item second">React Native</li>
+          <li class="tech-skills-item second">Typescript</li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+
+
+      
+<section id="my-projects" class="section my-projects">
+    <div class="container">
+        <h2 class="projects-title">my <span class="ighlight">projects</span></h2>
+        <ul class="project-list"></ul>
+        <div class="centered-button">
+            <button class="load-more" type="button">LOAD MORE</button>
+        </div>
+    </div>
+</section>
+      <section class="benefits">
+  <div class="container benefits-container">
+     
+    <h2 class="benefits-title js-title">
+      <span class="green-title">benefits</span> of working with me
+    </h2>
+  
+    <ul class="benefits-list">
+      <li class="benefits-item">
+        <div class="benefits-item-icon">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#user"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-subtitle">Expertise</h3>
+        <p class="benefits-item-description">
+          With extensive experience in development, I have a deep understanding
+          of programming and website development.
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item-icon">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#message"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-subtitle">Communication</h3>
+        <p class="benefits-item-description">
+          Understanding your needs and wants is my priority and I am always
+          available for discussions and open to corrections.
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item-icon">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#brush"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-subtitle">Art</h3>
+        <p class="benefits-item-description">
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item-icon">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#hourglass"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-subtitle">Urgent execution</h3>
+        <p class="benefits-item-description">
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="faq qtn" id="faq">
+  <div class="container faq-content">
+    <div class="title-qth">
+      <h2 class="faq-title">
+        Frequently Asked <span class="question">Questions</span>
+      </h2>
+    </div>
+    <ul class="faq-list accordion">
+      <li class="faq-item accordion-item">
+        <button class="faq-question accordion-header">
+          What programming languages are most often used in your project?
+          <span class="faq-arrow"></span>
+        </button>
+
+        <div class="faq-answer accordion-body">
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item accordion-item">
+        <button class="faq-question accordion-header">
+          What are the deadlines for the project?
+          <span class="faq-arrow"></span>
+        </button>
+        <div class="faq-answer accordion-body">
+          <p>
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item accordion-item">
+        <button class="faq-question accordion-header">
+          What payment methods do you accept?
+          <span class="faq-arrow"></span>
+        </button>
+        <div class="faq-answer accordion-body">
+          <p>
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item accordion-item">
+        <button class="faq-question accordion-header">
+          How can I contact you?
+          <span class="faq-arrow"></span>
+        </button>
+        <div class="faq-answer accordion-body">
+          <p>
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item accordion-item">
+        <button class="faq-question accordion-header">
+          Do you provide advice or support?
+          <span class="faq-arrow"></span>
+        </button>
+        <div class="faq-answer accordion-body">
+          <p>
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq-item accordion-item">
+        <button class="faq-question accordion-header">
+          What does the process of developing a software product look like from
+          idea to implementation?
+          <span class="faq-arrow"></span>
+        </button>
+        <div class="faq-answer accordion-body">
+          <p>
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="reviews" class="reviews">
+  <div class="container">
+    <h2 class="reviews-title">reviews</h2>
+    <div class="swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+      <!-- navigation buttons -->
+      <div class="swiper-buttons">
+        <div class="swiper-button-prev" tabindex="0">
+          <svg class="reviews-icon" width="24" height="24">
+            <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#arrow-reviews-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next" tabindex="0">
+          <svg class="reviews-icon" width="24" height="24">
+            <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#arrow-reviews-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script type="module" src="/js/reviews.js"></script> -->
+</section>
+
+      <section id="work-together" class="work-together">
+  <div class="container work-container">
+    <h2 class="work-together-title">
+      Let’s <span class="work-together-span">Work Together</span>
+    </h2>
+    <div class="work-together-main-container">
+      <address class="work-together-address">
+        <p class="work-together-text">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <ul class="work-together-list">
+          <li class="work-together-item">
+            <a href="tel:+380904567890" class="work-together-list-info">
+              <svg class="work-together-svg" width="24" height="24">
+                <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#phone"></use>
+              </svg>
+              +38 090 456 78 90
+            </a>
+          </li>
+          <li class="work-together-item">
+            <a
+              href="mailto:lloydjefferson@gmail.com"
+              class="work-together-list-info"
+            >
+              <svg class="work-together-svg" width="24" height="24">
+                <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#mail"></use>
+              </svg>
+              lloydjefferson@gmail.com
+            </a>
+          </li>
+          <li class="work-together-item">
+            <a
+              href="https://www.google.com/maps?q=New+York,+USA"
+              class="work-together-list-info"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="work-together-svg" width="24" height="24">
+                <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#location"></use>
+              </svg>
+              USA, New York
+            </a>
+          </li>
+        </ul>
+      </address>
+      <div class="work-together-form-container">
+        <form class="form" name="contact_us_form" autocomplete="off">
+          <div class="form-input-wrap">
+            <label for="email">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="Your email*"
+                required
+                autocomplete="off"
+                pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              />
+            </label>
+            <svg class="form-icon-success" width="16" height="16">
+              <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#success-filled"></use>
+            </svg>
+            <p class="form-input-error">Invalid email, try again</p>
+          </div>
+          <label>
+            <textarea
+              name="message"
+              class="form-message"
+              placeholder="Message"
+              required
+            ></textarea>
+          </label>
+          <p class="form-input-error-msg">All fields must be filled</p>
+          <button class="form-button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <button type="button" class="modal-close-btn">
+        <svg class="modal-close-svg" width="24" height="24">
+          <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#close-btn"></use>
+        </svg>
+      </button>
+      <div class="modal-text-container">
+        <h3 class="modal-text-main">
+          Thank you for your interest in cooperation!
+        </h3>
+        <p class="modal-text-second">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <script type="module" src="/js/work-together.js"></script> -->
+
+    </main>
+
+    <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-content">
+      <a class="footer-logo-link" href="./index.html">
+        <p>Lloyd<span class="footer-logo-span">Jefferson.</span></p>
+      </a>
+      <ul class="footer-list footer-font">
+        <li class="footer-list-item">
+          <a
+            class="footer-list-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a
+            class="footer-list-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a
+            class="footer-list-link"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-list-item">
+          <a
+            class="footer-list-link"
+            href="https://github.com/AnnnaOs/codeCreators-project"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="copyright footer-font">
+      <span>&copy; Copyright 2024.</span>
+      <span class="space-copyright">Made by LloydJefferson</span>
+    </p>
+  </div>
+</footer>
+<button class="scroll-btn scroll-up-btn">
+  <svg class="scroll-icon">
+    <use href="/js_110_AnnnaOs/assets/icons-LHmDkW2B.svg#up"></use>
+  </svg>
+</button>
+
+
+  </body>
+</html>
