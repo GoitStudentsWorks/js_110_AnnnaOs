@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/codeCreators-project/",
+    "build": "vite build --base=/js_110_AnnnaOs/",
     "preview": "vite preview"
   },
   "devDependencies": {
