@@ -1,14 +1,19 @@
 .work-together {
   padding: 40px 0 80px;
-  background-repeat: no-repeat;
-  background-position: top right;
+  /* background-repeat: no-repeat;
+  background-position: top right; */
 }
 
-@media (max-width: 767px) {
+.work-container {
+  background-repeat: no-repeat;
+  /* background-position: top right; */
+}
+
+/* @media (max-width: 767px) {
   .work-together {
     background-image: none;
   }
-}
+} */
 
 .work-together-title {
   font-weight: 400;
@@ -259,9 +264,17 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .work-together {
-    padding: 120px 0 124px 0;
+    /* padding: 120px 0 124px 0;
     background-size: 336px 260px;
-    background-position: right top;
+    background-position: right top; */
+    padding-bottom: 124px;
+  }
+
+  .work-container {
+    padding-top: 120px;
+    background-repeat: no-repeat;
+    background-position: right 32px top 13px;
+    background-size: 336px 260px;
   }
 
   .work-together-title {
@@ -305,9 +318,17 @@ textarea::placeholder {
 
 @media screen and (min-width: 1280px) {
   .work-together {
-    padding: 116px 0 164px 0;
+    /* padding: 116px 0 164px 0;
     background-size: 526px 408px;
-    background-position: right top;
+    background-position: right top; */
+    padding-bottom: 164px;
+  }
+
+  .work-container {
+    background-repeat: no-repeat;
+    background-position: right 32px top 30px;
+    background-size: 526px 408px;
+    padding-top: 116px;
   }
 
   .work-together-title {
@@ -339,7 +360,7 @@ textarea::placeholder {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+/* @media screen and (min-width: 768px) and (max-width: 1279px) {
   .work-together {
     background-image: url('../img/bg/decor-bg7@1x-tab.png');
   }
@@ -359,6 +380,30 @@ textarea::placeholder {
 
 @media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .work-together {
+    background-image: url('../img/bg/decor-bg3@2x-desk.png');
+  }
+} */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .work-container {
+    background-image: url('../img/bg/decor-bg7@1x-tab.png');
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi) {
+  .work-container {
+    background-image: url('../img/bg/decor-bg7@2x-tab.png');
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .work-container {
+    background-image: url('../img/bg/decor-bg3@1x-desk.png');
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .work-container {
     background-image: url('../img/bg/decor-bg3@2x-desk.png');
   }
 }
