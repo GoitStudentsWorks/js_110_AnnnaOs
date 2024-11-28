@@ -7,7 +7,7 @@
   max-width: 194px;
   margin: 0 auto 40px;
   text-transform: uppercase;
-  font-family: Impact;
+  font-family: var(--second-font-family);
   font-size: 52px;
   letter-spacing: 1.8px;
   line-height: 64px;
@@ -21,7 +21,6 @@
   border-radius: 16px;
   background-color: var(--gray);
   padding: 32px;
-  cursor: pointer;
 }
 
 .reviews-text {
@@ -31,6 +30,7 @@
   font-family: 'Poppins';
   letter-spacing: 0.2px;
   line-height: 24px;
+  margin-bottom: auto;
 }
 
 .reviews-foto {
@@ -42,7 +42,6 @@
 
 .reviewer-data {
   display: flex;
-  margin-top: 24px;
   gap: 16px;
   align-items: center;
 }
