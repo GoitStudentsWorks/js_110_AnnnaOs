@@ -1,5 +1,5 @@
 const scrollUpBtn = document.querySelector('.scroll-up-btn');
-
+const scrollDownBtn = document.querySelector('.scroll-down-btn');
 let lastScrollTop = 0; //Запамʼятовуємо останню позицію прокрутки
 let isScrollingUp = true; //Перевірка напрямку прокрутки
 
@@ -11,10 +11,10 @@ window.addEventListener('scroll', () => {
   if (currentTop > 0) {
     //Сторінка прокручена, кнопки повинні бути видимі
     scrollUpBtn.classList.add('is-active-scroll');
-    
+    scrollDownBtn.classList.add('is-active-scroll');
   } else {
     scrollUpBtn.classList.remove('is-active-scroll');
-    
+    scrollDownBtn.classList.remove('is-active-scroll');
   }
 
   //Логіка приховання/відображення кнопки "Вгору"
@@ -26,7 +26,10 @@ window.addEventListener('scroll', () => {
     isScrollingUp = true;
   }
 
-  
+  //Логіка приховання кнопки "Вниз" з нижньої частини сторінки
+  if (currentTop + window.innerHeight >= document.body.scrollHeight) {
+    scrollDownBtn.classList.remove('is-active-scroll'); //Приховуємо кнопку, якщо ми в самому низу
+  }
 
   //Логіка приховання кнопки "Вверх" з нижньої та верхньої частин сторінки
   if (
@@ -48,4 +51,11 @@ scrollUpBtn.addEventListener('click', () => {
   scrollUpBtn.classList.remove('is-active-scroll');
 });
 
-
+//Скрол вниз при кліку на кнопку
+scrollDownBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth',
+  });
+  scrollDownBtn.classList.remove('is-active-scroll');
+});
