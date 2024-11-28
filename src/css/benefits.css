@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 }
 
-.benefits-bg{
+.benefits-bg {
   display: none;
 }
 
@@ -64,7 +64,6 @@ ul .benefits-item:not(:last-child) {
   fill: none;
 }
 
-
 @media screen and (min-width: 768px) {
   .benefits {
     padding-top: 62px;
@@ -104,7 +103,7 @@ ul .benefits-item:not(:last-child) {
 @media screen and (min-width: 1280px) {
   .benefits {
     position: relative;
-    padding-top: 48px;
+    padding-top: 0;
     padding-bottom: 82px;
   }
 
@@ -122,10 +121,7 @@ ul .benefits-item:not(:last-child) {
     width: 384px;
   }
 
-  
- 
-
-.benefits-container{
+  .benefits-container {
     position: relative;
     background-image: url(/img/bg/decor-bg3@1x-desk.png);
     background-repeat: no-repeat;
@@ -135,7 +131,6 @@ ul .benefits-item:not(:last-child) {
     /* margin-top: -116px; */
   }
 
-  
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -143,6 +138,5 @@ ul .benefits-item:not(:last-child) {
     .benefits-container {
       background-image: url(/img/bg/decor-bg3@2x-desk.png);
     }
-  } 
-
+  }
 }

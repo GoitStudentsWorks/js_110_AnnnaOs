@@ -99,7 +99,6 @@ textarea {
 }
 
 .container {
-  min-width: 320px;
   max-width: 360px;
   margin: 0 auto;
   padding: 0 20px;
